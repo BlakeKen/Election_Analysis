@@ -12,11 +12,18 @@ file_to_save = os.path.join("analysis", "election_analysis.txt")
 total_votes = 0 
 
 #declare variable for canidate options
-canidate_options = [] 
+candidate_options = [] 
 
 #create empty dictionary
-canidate_votes = {}
+candidate_votes = {}
 
+# Winning Candidate and Count Tracker
+#declare variable that holds empty string for the winning canidate 
+winning_candidate = ""
+#declare winning count variable equal to zero
+winning_count = 0
+#declare winning percentage variable equal to zero
+winning_percentage = 0
 
 # use open statement to open file
 with open(file_to_load) as election_data:
@@ -32,31 +39,48 @@ with open(file_to_load) as election_data:
       total_votes += 1 # same as number= number + 
 
       #print the canidate name for each row 
-      canidate_name= row[2]
+      candidate_name= row[2]
 
 
       #If the canidate does not matching a canidate already added
-      if canidate_name not in canidate_options:
+      if candidate_name not in candidate_options:
         #add it to the list of canidates
-        canidate_options.append(canidate_name)
+        candidate_options.append(candidate_name)
 
-        #track current canidates votes 
-        canidate_votes[canidate_name] = 0 
+        #track current canidates votes for dictionary
+        candidate_votes[candidate_name] = 0 
 
        #print total votes
        # print(total_votes)
  
       #add a vote to the canidates count
-      canidate_votes[canidate_name] += 1
+      candidate_votes[candidate_name] += 1
 
 
-#print the canidate vote dictionary
-print(canidate_votes)
+# Determine the percentage of votes for each candidate by looping through counts.
+# Iterate through the candidate list
+for candidate_name in candidate_votes:
+    # 2. Retrieve vote count of a candidate.
+    votes = candidate_votes[candidate_name]
+    # 3. Calculate the percentage of votes.
+    vote_percentage = float(votes) / float(total_votes) * 100
+    #Print out the  candidate, vote count and percentage
+    print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
 
-#Complete list of canidates with votes
+    # Determine winning vote count and candidate
+    #If the votes and vote percentage are greater than the winning count.
+    if (votes > winning_count) and (vote_percentage > winning_percentage):
+      # If true then set winning_count = votes and winning_percent =
+       # vote_percentage.
+       winning_count = votes
+       winning_percentage = vote_percentage
+       # Set the winning_candidate equal to the candidate's name.
+       winning_candidate = candidate_name   
 
-#the percentage of votes each canidate won
-
-#the total number of votes for each canidate 
-
-#the winner based on the most votes
+winning_candidate_summary = (
+      f"--------------------------\n"
+      f"Winner: {winning_candidate}\n"
+      f"Winning Vote Count :{winning_count:,}\n"
+      f"Wiining Percentage: {winning_percentage:.1f}%\n"
+      f"--------------------------\n")
+print(winning_candidate_summary)
