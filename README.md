@@ -1,10 +1,10 @@
 # Election_Analysis
 ## Project Overview 
 
-1. Calculate the total number of votes
-2. Get a complete list of canidates who received votes
-3. Calculate the total number of votes for each canidate 
-4. Calculate the percentage won by each candidate 
+- Calculate the total number of votes
+- Get a complete list of candidates who received votes
+- Calculate the total number of votes for each candidate
+- Calculate the percentage won by each candidate
 
 ## Resources
 -Data Source: election_results.csv
