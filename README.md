@@ -15,23 +15,23 @@
 
 -There were 369,711 votes cast in the election.
 
-- The canidates were :
+### The candidates were :
 
 - Charles Casper Stockman
 - Diana DeGette
 - Raymon Anthony Doane
 
-- The canidates results were:
+### The canidates results were:
 
--Charles Casper Stockham received 85,213 votes and 23.0% of votes cast
+- Charles Casper Stockham received 85,213 votes and 23.0% of votes cast
 
--Diana DeGette received 272,892 votes and 73.8% of votes cast
+- Diana DeGette received 272,892 votes and 73.8% of votes cast
 
--Raymon Anthony Doane received 11,606 votes and  3.1% of votes cast
+- Raymon Anthony Doane received 11,606 votes and  3.1% of votes cast
 
-- The winner of the election was :
+### The winner of the election was :
 
--Diana DeGette who had the majority at 73.8% totaling out to 272,892 votes 
+- Diana DeGette who had the majority at 73.8% totaling out to 272,892 votes 
 
 ## Challenge Overview 
 
