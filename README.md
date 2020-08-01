@@ -7,8 +7,9 @@
 - Calculate the percentage won by each candidate
 
 ## Resources
--Data Source: election_results.csv
--Software : Python 3.7.6, Visual Studio Code 1.47.3
+- Data Source: election_results.csv
+- Software : Python 3.7.6
+- Visual Studio Code 1.47.3
 
 
 ### The Analysis of the election:
@@ -45,9 +46,9 @@ For the Challenge, I did an analysis based on county instead of candidate.
 - Denver County had 306,055 votes and 82.8% of votes cast.
 - Arapahoe County had  24,801 and 6.7% of votes cast.
 
-#### County with the largest turnout
+#### County with the largest turnout:
 
--Denver had the most votes in this election
+- Denver had the most votes in this election
 
 ## Summary statement 
 
