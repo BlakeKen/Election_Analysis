@@ -10,9 +10,10 @@
 -Data Source: election_results.csv
 -Software : Python 3.7.6, Visual Studio Code 1.47.3
 
-## Summary
 
-### The Analysis of the election show :
+### The Analysis of the election:
+      
+   ![](Resources/Election_Results.png)
 
 - There were 369,711 votes cast in the election.
 
